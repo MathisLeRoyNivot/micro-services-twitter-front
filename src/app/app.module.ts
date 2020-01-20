@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MicroButtonComponent } from './micro-button/micro-button.component';
+import { AudioComponent } from './audio/audio.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MicroButtonComponent
+    MicroButtonComponent,
+    AudioComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
