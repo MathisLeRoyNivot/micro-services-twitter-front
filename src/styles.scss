@@ -2,14 +2,16 @@
 
 $first-color: #2C50EE;
 $bkg-color: #F4F4F4;
-$grey : #848484;
-$light-grey : #CECECE;
-$white : #FFFFFF;
-$black : #000000;
-$neumorphism-shadow:-7px -7px 15px rgba($color: #ffffff, $alpha: .9), 7px 7px 15px rgba($color: #363636, $alpha: .15);
+$grey: #848484;
+$ultra-light-grey: #e3e3e3;
+$dark-grey: #363636;
+$light-grey: #CECECE;
+$white: #FFFFFF;
+$black: #000000;
+$neumorphism-shadow: -7px -7px 15px rgba($color: $white, $alpha: .9), 7px 7px 15px rgba($color: $dark-grey, $alpha: .15);
 
 body {
-    background-color: #e3e3e3;
-    width: 100%;
+    background-color: $ultra-light-grey;
     height: 100vh;
+    width: 100%;
 }
