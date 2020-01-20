@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: '/container-left/container-left.component.html',
+  styleUrls: ['/container-left/container-left.component.scss']
 })
 export class AppComponent {
   title = 'micro-services-twitter-front';
