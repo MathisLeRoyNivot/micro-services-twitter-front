@@ -1,25 +1,38 @@
 .tweet {
   /* Add shadows to create the "card" effect */
+  margin: 30px;
+  width: 40%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 15px;
+  background: white;
   /* 5px rounded corners */
   /* Add rounded corners to the top left and the top right corner of the image */
-  /* On mouse-over, add a deeper shadow */
   /* Add some padding inside the card container */
 }
 
 .tweet img {
-  border-radius: 5px 5px 0 0;
-}
-
-.tweet :hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 5px 5px;
 }
 
 .tweet .container {
-  padding: 2px 16px;
+  padding: 5px 16px;
+}
+
+.tweet .container h5 {
+  color: gray;
+}
+
+.search {
+  margin: 30px;
+}
+
+.search input {
+  border-radius: 5px;
+}
+
+.search button {
+  border-radius: 0 5px 5px 0;
 }
