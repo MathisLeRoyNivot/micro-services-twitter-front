@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: '<app-navbar></app-navbar>'
+  // templateUrl: './app.component.html',
+  // styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'micro-services-twitter-front';
