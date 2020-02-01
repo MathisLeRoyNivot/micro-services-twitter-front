@@ -7,6 +7,7 @@ import { ContainerLeftComponent } from './container-left/container-left.componen
 import { MicroButtonComponent } from './micro-button/micro-button.component';
 import { AudioComponent } from './audio/audio.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SideNavbarComponent } from './side-navbar/side-navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     ContainerLeftComponent,
     MicroButtonComponent,
     AudioComponent,
-    NavbarComponent
+    NavbarComponent,
+    SideNavbarComponent
   ],
   imports: [
     BrowserModule,

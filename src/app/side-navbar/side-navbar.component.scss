@@ -1,0 +1,18 @@
+@import '../../styles.scss';
+
+.left-side-bar-container {
+    display: flex;
+    height: 100vh;
+    padding: 10px;
+    position: fixed;
+    width: 80px;
+
+    nav {
+        background-color: $ultra-light-grey;
+        border-radius: 5px;
+        box-shadow: $neumorphism-shadow;
+        height: 100%;
+        padding: 5px;
+        width: 100%;
+    }
+}

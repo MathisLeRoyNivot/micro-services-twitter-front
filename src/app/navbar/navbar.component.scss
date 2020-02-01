@@ -1,12 +1,30 @@
 @import '../../styles.scss';
 
 .navbar-container {
-    padding: 10px;
-    width: 100%;
+    padding: 10px 10px 10px 0px;
+    margin-left: 80px;
+    width: calc(100% - 80px);
 
-    .top-navbar-container {
+    i {
+        color: $grey;
+        position: absolute;
+        margin-left: 15px;
+    }
+
+    .search-input {
+        background-color: $ultra-light-grey;
+        border: 3px solid $ultra-light-grey;
         border-radius: 5px;
         box-shadow: $neumorphism-shadow;
+        color: $grey;
+        height: 100%;
         padding: 5px 15px;
+        text-indent: 25px;
+        transition: box-shadow ease-in-out 0.25s;
+        width: 300px;
+
+        &:focus {
+            box-shadow: $neumorphism-shadow, $neumorphism-shadow-inset;
+        }
     }
 }
