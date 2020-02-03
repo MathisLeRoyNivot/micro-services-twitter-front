@@ -10,7 +10,14 @@ $white: #FFFFFF;
 $black: #000000;
 $neumorphism-shadow:11px 11px 21px #c8c8c8, -11px -11px 21px #fefefe;
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+    font-weight:300;
+  }
 
+  
+@import "~animate.css/animate.min";
 // SASS
 body {
     background-color: $ultra-light-grey;

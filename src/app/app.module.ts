@@ -7,6 +7,7 @@ import { ContainerLeftComponent } from './container-left/container-left.componen
 import { MicroButtonComponent } from './micro-button/micro-button.component';
 import { AudioComponent } from './audio/audio.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TextFieldComponent } from './text-field/text-field.component';
 // import { SpeechRecognition } from "nativescript-speech-recognition";
 
 @NgModule({
@@ -15,7 +16,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     ContainerLeftComponent,
     MicroButtonComponent,
     AudioComponent,
-    NavbarComponent
+    NavbarComponent,
+    TextFieldComponent
   ],
   imports: [
     BrowserModule,
