@@ -1,0 +1,17 @@
+<div class="user-infos-container">
+    <div class="user-main-infos">
+        <img class="user-pp" src="{{ userInfos[0].profile_image_url }}" alt="User picture profile">
+        <div class="names">
+            <h4 class="user-screen-name">{{ userInfos[0].name }}</h4>
+            <h5 class="user-screen-name">@{{ userInfos[0].screen_name }}</h5>
+        </div>
+    </div>
+    <div class="user-follow-infos">
+        <p class="following"><span class="amount">{{ userInfos[0].friends_count }}</span> Following</p>
+        <p class="followers"><span class="amount">{{ userInfos[0].followers_count }}</span> Followers</p>
+    </div>
+    <hr>
+    <div class="user-other-info">
+        <p>{{ userInfos[0].statuses_count }} Tweets</p>
+    </div>
+</div>

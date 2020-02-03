@@ -1,0 +1,43 @@
+@import '../../styles.scss';
+
+$image-size: 75px;
+
+.user-infos-container {
+    background-color: $ultra-light-grey;
+    border-radius: 10px;
+    box-shadow: $neumorphism-shadow;
+    padding: 15px 20px;
+    position: absolute;
+    right: 30px;
+    top: 20px; 
+    width: 400px;
+
+    .user-main-infos {
+        display: flex;
+        margin-bottom: 15px;
+
+        .user-pp {
+            border-radius: 50%;
+            height: $image-size;
+            margin-right: 15px;
+            width: $image-size;
+        }
+
+        .names {
+            line-height: $image-size;
+        }
+    }
+
+    .user-follow-infos {
+        display: flex;
+        justify-content: space-evenly;
+
+        .amount {
+            font-weight: bold;
+        }
+    }
+
+    .user-other-info {
+        text-align: center;
+    }
+}
