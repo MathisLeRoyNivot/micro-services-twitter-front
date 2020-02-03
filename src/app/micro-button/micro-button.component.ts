@@ -1,9 +1,9 @@
 import { Component, OnInit, Attribute } from "@angular/core";
-import {
-  SpeechRecognition,
-  SpeechRecognitionTranscription,
-  SpeechRecognitionOptions
-} from "nativescript-speech-recognition";
+// import {
+//   SpeechRecognition,
+//   SpeechRecognitionTranscription,
+//   SpeechRecognitionOptions
+// } from "nativescript-speech-recognition";
 @Component({
   selector: "app-micro-button",
   templateUrl: "./micro-button.component.html",
@@ -15,7 +15,7 @@ export class MicroButtonComponent implements OnInit {
   public src: String;
   public clickon: Boolean;
   public element: HTMLElement;
-  public options: SpeechRecognitionOptions;
+  // public options: SpeechRecognitionOptions;
 
   constructor(
     @Attribute("size") size: string,
@@ -29,13 +29,13 @@ export class MicroButtonComponent implements OnInit {
     this.src = "micB.png";
     this.clickon = false;
     this.element = document.getElementById("buttonMic") as HTMLElement;
-    this.options = {
-      locale:'fr-FR',
-      onResult:(transcription:SpeechRecognitionTranscription)=>{
-        console.log( `${transcription.text}`)
-        console.log( `${transcription.finished}`);
-      }
-    }
+    // this.options = {
+    //   locale:'fr-FR',
+    //   onResult:(transcription:SpeechRecognitionTranscription)=>{
+    //     console.log( `${transcription.text}`)
+    //     console.log( `${transcription.finished}`);
+    //   }
+    // }
   }
   ngOnInit() {}
 
@@ -59,29 +59,29 @@ export class MicroButtonComponent implements OnInit {
     if (this.clickon) {
       this.clickon = false;
       this.src = "micB.png";
-      this.speech.stopListening().then(()=>{
-        console.log("stopped listening");
-      },(err)=>{console.log(err);
-      })
+      // this.speech.stopListening().then(()=>{
+      //   console.log("stopped listening");
+      // },(err)=>{console.log(err);
+      // })
     } else {
       this.clickon = true;
       this.src = "micW.png";
-      this.speech.available().then(result => {
-        result
-          ? this.startListening()
-          : alert("speech recignition is not available");
-      });
+      // this.speech.available().then(result => {
+      //   result
+      //     ? this.startListening()
+      //     : alert("speech recignition is not available");
+      // });
     }
 
    
    
   }
   startListening() {
-    this.speech.startListening(this.options).then(()=>{
-      console.log("started listening");
-    },error=>{
-      console.log(error);
-    });
+    // this.speech.startListening(this.options).then(()=>{
+    //   console.log("started listening");
+    // },error=>{
+    //   console.log(error);
+    // });
   }
 
 
