@@ -19,7 +19,7 @@ export class MicroButtonComponent implements OnInit {
 
   constructor(
     @Attribute("size") size: string,
-    private speech: SpeechRecognition
+    // private speech: SpeechRecognition
   ) {
     if (size) {
       this.size = size;
