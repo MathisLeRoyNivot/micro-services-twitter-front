@@ -17,16 +17,15 @@ export class TextFieldComponent implements OnInit {
   click(txt) {
     console.log(txt.value);
     if (txt.value) {
-      //TODO A tester Imperativement apres merge
-    // this.http
-    //   .post('http://localhost:3000/api/twitter/status' , {
-    //     status:txt.value
-    //   }).toPromise().then((res)=>{
-    //     alert('Vous venez de tweeter : ' + txt.value)
-    // txt.value=""
-    //   }).catch((err)=>{
-    //     alert(err.message)
-    //   });
+    this.http
+      .post('http://localhost:3000/api/twitter/status' , {
+        status:txt.value
+      }).toPromise().then((res)=>{
+        alert('Vous venez de tweeter : ' + txt.value)
+    txt.value=""
+      }).catch((err)=>{
+        alert(err.message)
+      });
     
     }
     

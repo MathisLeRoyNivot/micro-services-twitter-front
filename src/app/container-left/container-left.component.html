@@ -1,6 +1,16 @@
 <div class="tweet">
-  <div *ngFor="let tweet of timelines; let i = index" [attr.data-index]="i" class="container">
-    <p class="profile"><img src="{{ tweet.user.profile_image_url }}" alt="Avatar">{{ tweet.user.name }}<br><div class="arobase">@{{ tweet.user.screen_name }}</div></p>
+  <div
+    *ngFor="let tweet of timelines; let i = index"
+    [attr.data-index]="i"
+    class="container"
+    (click)="goRank.next(tweet.user.screen_name)"
+  >
+    <p class="profile">
+      <img src="{{ tweet.user.profile_image_url }}" alt="Avatar" />{{
+        tweet.user.name
+      }}<br />
+      <span class="arobase">@{{ tweet.user.screen_name }}</span>
+    </p>
     <p class="content">{{ tweet.text }}</p>
   </div>
 </div>
