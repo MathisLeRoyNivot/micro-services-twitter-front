@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    .FakeNave{
+    .nav{
         width: 80px;
         background-color: $first-color;
     }
@@ -34,7 +34,6 @@ body {
             
         }
         .readTweet{
-            margin-left:30px;
             width: 100%;        
         }
     }

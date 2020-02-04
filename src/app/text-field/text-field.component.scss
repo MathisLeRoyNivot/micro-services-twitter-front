@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: flex-end;
   .textarea {
-    width: 100%;
+    width: calc( 100% - 20px);
     min-height: 450px;
     border-radius: 28px;
     box-shadow: -9px 13px 16px 3px rgba(191, 191, 191, 1);
@@ -14,6 +14,7 @@
     font-size: 1.7rem;
     padding: 10px 0 0 20px;
     font-family: Montserrat;
+    resize: none;
     &::placeholder {
       color: $light-grey;
       font-size: 2rem;
@@ -25,8 +26,8 @@
     width: 30px;
     padding: 0;
     margin: 0;
-    margin-top:-40px;
-    margin-right:10px;
+    margin-top:-50px;
+    margin-right:20px;
     .btn-img {
       width: 30px;
     }
