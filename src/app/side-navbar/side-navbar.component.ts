@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-side-navbar',
@@ -7,18 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavbarComponent implements OnInit {
 
-  public currUser: Number;
+  @Output() pageChange = new EventEmitter;
 
-  profileSelect() {
-    this.currUser = 1;
-    console.log(this.currUser);
-    return this.currUser;
+ ratingSelect() {
+    this.pageChange.next(2);
   }
 
   textFieldSelect() {
-    this.currUser = 0;
-    console.log(this.currUser);
-    return this.currUser;
+    this.pageChange.next(1);
   }
   
   constructor() { }
