@@ -302,12 +302,14 @@
 </style>
 <div class="contentsite">
   <app-side-navbar></app-side-navbar>
-  <div class="timeline"></div>
+  <div class="timeline" (click)="newUserSelect()"></div>
   <div class="sideRigth">
     <app-micro-button class="micButton" size="80px"></app-micro-button>
-    <div class="readTweet">
-      <app-text-field></app-text-field>
+    <div class="content">
+      <app-profil-user class="profilUser" *ngIf="currUser"></app-profil-user>
+      <app-text-field class="textField" *ngIf="!currUser"></app-text-field>
     </div>
   </div>
 </div>
 <div class="blueToRight"></div>
+

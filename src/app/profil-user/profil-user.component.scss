@@ -1,0 +1,41 @@
+@import "../../styles.scss";
+
+.profiler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .pp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    .imgPP {
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+    }
+    .peplCode {
+      color: $dark-grey;
+    }
+    .rating {
+      display: flex;
+      flex-direction: row;
+      .star {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .info{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: $grey;
+      .Intitule{
+          color: $dark-grey;
+          font-weight: bold;
+      }
+  }
+}

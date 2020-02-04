@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 
-// import { HttpClient } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: "app-text-field",
@@ -8,10 +8,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./text-field.component.scss"]
 })
 export class TextFieldComponent implements OnInit {
-  // public http: HttpClient;
-  // constructor(private httpR: HttpClient) {
-    // this.http = httpR;
-  // }
+  public http: HttpClient;
+  constructor(private httpR: HttpClient) {
+    this.http = httpR;
+  }
 
   ngOnInit() {}
   click(txt) {
@@ -25,7 +25,7 @@ export class TextFieldComponent implements OnInit {
     //     alert('Vous venez de tweeter : ' + txt.value)
     // txt.value=""
     //   }).catch((err)=>{
-    //     alert(err)
+    //     alert(err.message)
     //   });
     
     }
