@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'micro-services-twitter-front';
-  public currUser:Number;
-  newUserSelect(){
-    this.currUser = 1;
-  }
+  //public currUser:Number;
+  //newUserSelect(){
+  //  this.currUser = 1;
+  //}
 }

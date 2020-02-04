@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavbarComponent implements OnInit {
 
+  public currUser: Number;
+
+  profileSelect() {
+    this.currUser = 1;
+    console.log(this.currUser);
+    return this.currUser;
+  }
+
+  textFieldSelect() {
+    this.currUser = 0;
+    console.log(this.currUser);
+    return this.currUser;
+  }
+  
   constructor() { }
 
   ngOnInit() {

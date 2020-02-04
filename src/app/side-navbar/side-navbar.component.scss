@@ -23,5 +23,12 @@
                 width: 50px;
             }
         }
+        .navbar-button {
+            img {
+                box-shadow: $neumorphism-shadow;
+                height: auto;
+                width: 50px;
+            }
+        }
     }
 }
