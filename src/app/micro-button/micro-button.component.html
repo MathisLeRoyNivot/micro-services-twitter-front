@@ -1,3 +1,14 @@
 <div class="content-btn">
-    
+  <button
+    id="btn"
+    class="btn"
+    [ngStyle]="applyStyles()"
+    (tap)="click()"
+    (mouseenter)="enter()" 
+    (mouseleave)="leave()"
+  >
+    <img class="btn-img" src="../../assets/icon/{{src}}" alt="Mic" />
+  </button>
 </div>
+
+

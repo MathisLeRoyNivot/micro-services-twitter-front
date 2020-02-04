@@ -1,15 +1,29 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
-.content-btn{
-    background-color: $white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    border-color: 1px solid $first-color;
+.content-btn {
+  margin: 10px;
+  display:flex;
+  .btn {
+    background-color: $ultra-light-grey;
+    min-height: 50px;
+    min-width: 50px;
+
+    border: $first-color 2px solid;
     box-shadow: $neumorphism-shadow;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    .btn-img {
+      width: 100%;
+    }
+  }
+  .btn:hover {
+    background-color:$first-color;
+    border: $ultra-light-grey 2px solid; 
+  }
+  .btn:focus {
+    background-color:$first-color;
+    border: $ultra-light-grey 2px solid; 
+  }
 }
-
