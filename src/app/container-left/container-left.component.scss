@@ -1,22 +1,36 @@
+@import '../../styles.scss';
+
 .tweet {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 100%;
+  border-radius: 28px;
+  box-shadow: $neumorphism-shadow;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-radius: 5px;
-  /* 5px rounded corners */
+  background: white;
+  font-size: 2rem;
+  font-family: 'Montserrat';
 
-  /* Add rounded corners to the top left and the top right corner of the image */
-  img {
-    border-radius: 5px 5px 0 0;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  :hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  p img {
+    width: 50px;
+    height: auto;
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
   }
 
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
+  .profile {
+    font-size: 20px;
+  }
+
+  .arobase {
+    color: gray;
+    font-size: 15px;
+  }
+
+  .content {
+    font-size: 25px;
+    margin-left: 60px;
   }
 }
