@@ -17,13 +17,13 @@ export class TextFieldComponent implements OnInit {
 	click(txt) {
 		if (txt.value) {
 			const requestParam = {
-				status: txt.value 
+				status: txt.value
 			};
 			this.httpClient.post(this.TWITTER_STATUS_URL , requestParam).toPromise().then(res => {
-				alert('Vous venez de tweeter : ' + requestParam.status)
-				txt.value=""
-			}).catch(err =>{
-				alert(err.message)
+				alert('Vous venez de tweeter : ' + requestParam.status);
+				txt.value = "";
+			}).catch(err => {
+				alert(err.message);
 			});
 		}
 	}
