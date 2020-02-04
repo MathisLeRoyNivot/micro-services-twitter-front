@@ -1,7 +1,7 @@
 <img src="" alt="">
 <div class="profiler">
   <div class="pp">
-    <img src="{{userslec.profile_background_image_url}}" alt="PP.jgp" class="imgPP" />
+    <img src="{{ userslec.profile_image_url }}" alt="PP.jgp" class="imgPP" />
     <h3 class="peplCode">{{ userslec.name }}</h3>
     <h3 class="peplCode">{{ userslec.screen_name }}</h3>
     <div *ngIf="noteUser; else elseBlockAll" class="rating">

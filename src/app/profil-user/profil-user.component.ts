@@ -2,24 +2,18 @@ import { Component, OnInit, Input } from "@angular/core";
 import { Rank } from "../../model/Rank";
 import { User } from "../../model/User";
 import { HttpClient } from "@angular/common/http";
+
 @Component({
   selector: "app-profil-user",
   templateUrl: "./profil-user.component.html",
   styleUrls: ["./profil-user.component.scss"]
 })
 export class ProfilUserComponent implements OnInit {
+
   readonly GETUSER_URL = "http://localhost:3000/api/twitter/user-infos/";
   readonly GETRANK = "http://localhost:8002/ratings";
-  readonly POSTRANK = "http://localhost:8002/ratings";
+  readonly POSTRANK = "http://localhost:8002/rating";
   public userslec: User;
-  // = {
-  //   screen_name: "@sardo",
-  //   name: "G A L M",
-  //   location: "Nantes",
-  //   description: "Micro Services project ⌘",
-  //   url: "null",
-  //   profile_background_image_url:"../../assets/PPSardoche.jpg"
-  // };
 
   @Input() nameUser: String;
   public noteUser: number;
@@ -49,17 +43,20 @@ export class ProfilUserComponent implements OnInit {
         });
     });
   }
+
   addStar(index) {
-    this.httpClient
-      .post(this.POSTRANK , {
-        twitter_id:this.userslec.id_str,
-        rated_twitter_id:"1216999697061163008",
-        note:this.noteUser.toString()
-      }).toPromise().then((res)=>{
-        alert('Note ajouté')
-        this.noteUser = index+1
-      }).catch((err)=>{
-        alert(err.message)
-      });
+    this.noteUser = index + 1
+    const noteParam = {
+      twitter_id: "1216999697061163008",
+      rated_twitter_id: this.userslec.id_str,
+      note: this.noteUser.toString()
+    }
+    console.log(noteParam);
+
+    this.httpClient.post(this.POSTRANK, noteParam).toPromise().then((res) => {
+      alert('Note ajouté')
+    }).catch(err => {
+      throw err;
+    });
   }
 }
