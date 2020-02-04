@@ -1,6 +1,6 @@
 <div class="tweet">
-  <div class="container">
-    <p class="profile"><img src="https://image-placeholder.com/images/actual-size/57x57.png" alt="Avatar">Sardoche<br><div class="arobase">@Sardoche_Lol</div></p>
-    <p class="content">Ceci est le tweet</p>
+  <div *ngFor="let tweet of timelines; let i = index" [attr.data-index]="i" class="container">
+    <p class="profile"><img src="{{ tweet.user.profile_image_url }}" alt="Avatar">{{ tweet.user.name }}<br><div class="arobase">@{{ tweet.user.screen_name }}</div></p>
+    <p class="content">{{ tweet.text }}</p>
   </div>
 </div>

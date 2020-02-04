@@ -8,14 +8,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContainerLeftComponent implements OnInit {
 
-  readonly TIMELINE_URL = 'http://localhost:3000/api/twitter/timelines'
+  readonly TIMELINE_URL = 'http://localhost:3000/api/twitter/timeline'
 
-  public timelines:Object;
+  timelines: any;
+
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
     this.httpClient.get(this.TIMELINE_URL).subscribe(data => {
       this.timelines = data;
+      console.log(data);
       return this.timelines;
     });
   }
