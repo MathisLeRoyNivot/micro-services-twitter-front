@@ -10,7 +10,7 @@ export class UserInfoComponent implements OnInit {
   
   readonly USER_INFOS_URL = 'http://localhost:3000/api/twitter/user-infos/galm_ms';
 
-  userInfos: any; //Observable<any>;
+  userInfos: any;
 
   constructor(private httpClient: HttpClient) { }
 
