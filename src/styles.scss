@@ -9,9 +9,18 @@ $light-grey: #CECECE;
 $white: #FFFFFF;
 $black: #000000;
 $neumorphism-shadow: -7px -7px 15px rgba($color: $white, $alpha: .9), 7px 7px 15px rgba($color: $dark-grey, $alpha: .15);
-$neumorphism-shadow-inset: inset -5px -5px 15px rgba($color: $white, $alpha: .5), inset 5px 5px 10px rgba($color: $dark-grey, $alpha: .05);
-// $neumorphism-shadow:11px 11px 21px #c8c8c8, -11px -11px 21px #fefefe;
 
+$neumorphism-shadow-inset: inset -5px -5px 15px rgba($color: $white, $alpha: .5), inset 5px 5px 10px rgba($color: $dark-grey, $alpha: .05);
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+    font-weight:300;
+  }
+
+  
+@import "~animate.css/animate.min";
 // SASS
 body {
     background-color: $ultra-light-grey;

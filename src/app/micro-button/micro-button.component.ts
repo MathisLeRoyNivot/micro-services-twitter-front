@@ -54,11 +54,11 @@ export class MicroButtonComponent implements OnInit {
     }
   }
 
-  click() {
-    
+  click(ctx) {
     if (this.clickon) {
       this.clickon = false;
       this.src = "micB.png";
+      ctx.blur()
       // this.speech.stopListening().then(()=>{
       //   console.log("stopped listening");
       // },(err)=>{console.log(err);

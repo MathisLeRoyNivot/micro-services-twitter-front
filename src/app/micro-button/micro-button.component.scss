@@ -9,7 +9,8 @@
     min-width: 50px;
 
     border: $first-color 2px solid;
-    box-shadow: $neumorphism-shadow;
+    box-shadow: 11px 11px 22px #213cb3, 
+    -11px -11px 22px #3764ff;
     display: flex;
     flex-direction: row;
     align-items: center;
