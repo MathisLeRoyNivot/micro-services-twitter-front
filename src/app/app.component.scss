@@ -36,9 +36,12 @@ body {
             align-self:flex-end
             
         }
-        .readTweet{
+        .content{
             width: 100%; 
-            padding: 20px;       
+            padding: 20px;     
+            & > *{
+                width: 100%;
+            }
         }
     }
 }

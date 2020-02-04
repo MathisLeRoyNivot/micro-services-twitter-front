@@ -18,7 +18,7 @@ export class MicroButtonComponent implements OnInit {
   // public options: SpeechRecognitionOptions;
 
   constructor(
-    @Attribute("size") size: string,
+    @Attribute("size") size: string
     // private speech: SpeechRecognition
   ) {
     if (size) {
@@ -58,7 +58,7 @@ export class MicroButtonComponent implements OnInit {
     if (this.clickon) {
       this.clickon = false;
       this.src = "micB.png";
-      ctx.blur()
+      ctx.blur();
       // this.speech.stopListening().then(()=>{
       //   console.log("stopped listening");
       // },(err)=>{console.log(err);
@@ -66,15 +66,13 @@ export class MicroButtonComponent implements OnInit {
     } else {
       this.clickon = true;
       this.src = "micW.png";
-      // this.speech.available().then(result => {
-      //   result
-      //     ? this.startListening()
-      //     : alert("speech recignition is not available");
-      // });
+      //   this.speech.available().then(result => {
+      //     result
+      //       ? this.startListening()
+      //       : alert("speech recignition is not available");
+      //   });
+      // }
     }
-
-   
-   
   }
   startListening() {
     // this.speech.startListening(this.options).then(()=>{
@@ -83,7 +81,4 @@ export class MicroButtonComponent implements OnInit {
     //   console.log(error);
     // });
   }
-
-
-
 }
