@@ -1,27 +1,31 @@
-# MicroServicesTwitterFront
+<p align="center">
+<img src="https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" height="50px">
+<img src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/300px-Twitter_Bird.svg.png" height="50px">
+</p>
+<h1 align="center">Micro Services - Twitter</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
+## Project Structure :open_file_folder:
+- **Go Service** : [Go Service Documentation](https://github.com/MathisLeRoyNivot/micro-services-twitter-go "Go to the Go Service Documentation")
+- **API** : [API Documentation](https://github.com/MathisLeRoyNivot/micro-services-twitter-api "Go to the API Documentation")
 
-## Development server
+## Setup :gear:
+After cloning the prject type the following commands to install the project's dependencies :
+```bash
+$ cd micro-services-front
+$ npm install
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Running the app :arrow_forward:
+In order to launch the app, you only have to run the following command on your CLI :
+```bash
+$ ng serve
+```
 
-## Code scaffolding
+## Contributors :computer:
+- [Geoffrey Clermont](https://github.com/Geoffrey-max "Go to @Geoffrey-max's Github")
+- [Antonin Joulie](https://github.com/AntoninJoulie "Go to @AntoninJoulie's Github")
+- [Mathis Le Roy-Nivot](https://github.com/MathisLeRoyNivot "Go to @MathisLeRoyNivot's Github")
+- [Léo Rigaudeau](https://github.com/leorigaudeau "Go to @leorigaudeau's Github")
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License :white_check_mark:
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MathisLeRoyNivot/micro-services-twitter-api/blob/master/LICENSE) 2020 ©
