@@ -1,0 +1,59 @@
+@import '../../styles.scss';
+
+.tweet {
+	/* Add shadows to create the "card" effect */
+	padding: 50px;
+	width: 100%;
+	background-color: $ultra-light-grey;
+	border-radius: 28px;
+	// box-shadow: $neumorphism-shadow;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	font-size: 2rem;
+	font-family: 'Montserrat';
+	max-height: 100vh;
+	overflow-y: scroll;
+
+	.container {
+		background-color: $ultra-light-grey;
+        border: 3px solid $ultra-light-grey;
+		box-shadow: $neumorphism-shadow;
+		border-radius: 10px;
+		padding: 20px;
+		margin-bottom: 30px;
+		transition: box-shadow ease-in-out .25s;
+		
+		&:hover {	
+			cursor: pointer;		
+			box-shadow: $neumorphism-shadow, $neumorphism-shadow-inset;
+		}
+	}
+
+	p {
+		font-size: 1rem;
+
+		img {
+			width: 50px;
+			height: auto;
+			float: left;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+	}
+
+	.profile {
+		font-size: 20px;
+	}
+
+	.arobase {
+		color: gray;
+		font-size: 15px;
+	}
+
+	.content {
+		overflow: hidden;
+		font-size: 25px;
+		margin-left: 60px;
+		cursor: pointer;
+	}
+}

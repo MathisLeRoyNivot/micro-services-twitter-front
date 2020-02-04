@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'micro-services-twitter-front';
   public currUser:Number;
-  public page:Number=2;
+  public page:Number=1;
   
   appContainerLeft(evnt){
     this.currUser = evnt;

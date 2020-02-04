@@ -12,6 +12,7 @@ import { SideNavbarComponent } from './side-navbar/side-navbar.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { TextFieldComponent } from './text-field/text-field.component';
 import { ProfilUserComponent } from './profil-user/profil-user.component';
+import { ListeRatingComponent } from './liste-rating/liste-rating.component';
 // import { SpeechRecognition } from "nativescript-speech-recognition";
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ProfilUserComponent } from './profil-user/profil-user.component';
     SideNavbarComponent,
     UserInfoComponent,
     TextFieldComponent,
-    ProfilUserComponent
+    ProfilUserComponent,
+    ListeRatingComponent
   ],
   imports: [
     BrowserModule,

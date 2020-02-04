@@ -1,0 +1,26 @@
+<div class="tweet">
+    <div
+      *ngFor="let user of timelines; let i = index"
+      [attr.data-index]="i"
+      class="container"
+    >
+      <p class="profile">
+        <img  src="{{userslec.profile_image_url}}" alt="Avatar" />{{
+            user.name
+        }}<br />
+        <span class="arobase">@{{ user.screen_name }}</span>
+      </p>
+      <div *ngFor="let fv of five; let i = index">
+        <img
+          *ngIf="i >= user.noteUI; else elseBlock"
+          class="star"
+          src="../../assets/icon/starV.png"
+          class="star"
+        />
+        <ng-template #elseBlock>
+          <img class="star" src="../../assets/icon/star.png" />
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  
