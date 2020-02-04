@@ -303,13 +303,13 @@
 <div class="contentsite">
   <app-side-navbar (pageChange) = "pageValueChange($event)"></app-side-navbar>
   <div class="timeline">
-    <app-container-left></app-container-left>
+    <app-container-left  (goRank)="appContainerLeft($event)"></app-container-left>
   </div>
   <div class="sideRigth">
     <app-user-info></app-user-info>
     <app-micro-button class="micButton" size="80px"></app-micro-button>
     <div class="content" *ngIf="page==1">
-      <app-profil-user class="profilUser" *ngIf="currUser"></app-profil-user>
+      <app-profil-user class="profilUser" *ngIf="currUser"  [nameUser]="currUser"></app-profil-user>
       <app-text-field class="textField" *ngIf="!currUser"></app-text-field>
     </div><div class="content" *ngIf="page==2"></div>
   </div>

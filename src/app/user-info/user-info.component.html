@@ -1,6 +1,6 @@
 <div class="user-infos-container">
     <div class="user-main-infos">
-        <img class="user-pp" src="{{ userInfos.profile_image_url }}" alt="User picture profile">
+        <img class="user-pp" [attr.src]="userInfos.profile_image_url" alt="User picture profile">
         <div class="names">
             <h4 class="user-screen-name">{{ userInfos.name }}</h4>
             <h5 class="user-screen-name">@{{ userInfos.screen_name }}</h5>

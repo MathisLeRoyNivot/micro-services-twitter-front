@@ -16,18 +16,29 @@
 
 	.container {
 		background-color: $ultra-light-grey;
+        border: 3px solid $ultra-light-grey;
 		box-shadow: $neumorphism-shadow;
-		border-radius: 5px;
+		border-radius: 10px;
 		padding: 20px;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
+		transition: box-shadow ease-in-out .25s;
+		
+		&:hover {	
+			cursor: pointer;		
+			box-shadow: $neumorphism-shadow, $neumorphism-shadow-inset;
+		}
 	}
 
-	p img {
-		width: 50px;
-		height: auto;
-		float: left;
-		border-radius: 50%;
-		margin-right: 10px;
+	p {
+		font-size: 1rem;
+
+		img {
+			width: 50px;
+			height: auto;
+			float: left;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
 	}
 
 	.profile {
@@ -40,7 +51,9 @@
 	}
 
 	.content {
+		overflow: hidden;
 		font-size: 25px;
 		margin-left: 60px;
+		cursor: pointer;
 	}
 }

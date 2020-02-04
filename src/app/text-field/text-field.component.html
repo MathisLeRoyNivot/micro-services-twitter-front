@@ -1,11 +1,4 @@
-<textarea placeholder="Ecrire un tweet" type="text" #form7 class="textarea" #txt></textarea>
-<button
-    #btn
-    class="btn"
-    (click)="click(txt)"
-    (mouseenter)="enter(btn)" 
-    (mouseleave)="leave(btn)"
-  >
-    <img class="btn-img" src="../../assets/send.png" alt="Mic" />
-  </button>
-
+<textarea placeholder="Ecrire un tweet" type="text" #form7 class="textarea" #txt maxlength="280"></textarea>
+<button #btn class="btn" (click)="click(txt)" (mouseenter)="enter(btn)" (mouseleave)="leave(btn)">
+  <img class="btn-img" src="../../assets/send.png" alt="Mic" />
+</button>

@@ -9,8 +9,9 @@ export class AppComponent {
   title = 'micro-services-twitter-front';
   public currUser:Number;
   public page:Number=2;
-  newUserSelect(){
-    this.currUser = 1;
+  
+  appContainerLeft(evnt){
+    this.currUser = evnt;
   }
 
   pageValueChange(eve) {
