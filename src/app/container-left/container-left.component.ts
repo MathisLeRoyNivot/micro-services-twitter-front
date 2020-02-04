@@ -17,7 +17,6 @@ export class ContainerLeftComponent implements OnInit {
   ngOnInit() {
     this.httpClient.get(this.TIMELINE_URL).subscribe(data => {
       this.timelines = data;
-      console.log(data);
       return this.timelines;
     });
     
