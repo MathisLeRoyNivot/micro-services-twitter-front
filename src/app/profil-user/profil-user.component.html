@@ -1,22 +1,37 @@
+<img src="" alt="">
 <div class="profiler">
   <div class="pp">
-    <img src="../../assets/PPSardoche.jpg" alt="PP.jgp" class="imgPP" />
-    <h3 class="peplCode">@{{ people.code }}</h3>
-    <div class="rating">
-      <div *ngFor="let fv of five; let i= index">
-        <img  *ngIf="i >= people.rating; else elseBlock" class="star" src="../../assets/icon/starV.png" class="star" />
+    <img src="{{userslec.profile_background_image_url}}" alt="PP.jgp" class="imgPP" />
+    <h3 class="peplCode">{{ userslec.name }}</h3>
+    <h3 class="peplCode">{{ userslec.screen_name }}</h3>
+    <div *ngIf="noteUser; else elseBlockAll" class="rating">
+      <div *ngFor="let fv of five; let i = index">
+        <img
+          *ngIf="i >= noteUser; else elseBlock"
+          class="star"
+          src="../../assets/icon/starV.png"
+          class="star"
+        />
         <ng-template #elseBlock>
-            <img  class="star" src="../../assets/icon/star.png" class="star" />
+          <img class="star" src="../../assets/icon/star.png" />
         </ng-template>
+      </div>
     </div>
-    </div>
+    <ng-template #elseBlockAll>
+      <div class="rating">
+        <div *ngFor="let fv of five; let i = index">
+          <img
+            (click)="addStar(i)"
+            class="star"
+            src="../../assets/icon/starV.png"
+          />
+        </div>
+      </div>
+    </ng-template>
   </div>
   <div class=" info">
-        <p><span class="Intitule">Bio : </span>{{people.bio}}</p>
-        <p><span class="Intitule">Date d'inscription : </span>{{people.dateInscription}}</p>
-        <p><span class="Intitule">Date de naissance : </span>{{people.dateNaissance}}</p>
-        <p><span class="Intitule">Lieu : </span>{{people.lieu}}</p>
-        <p><span class="Intitule">lien : </span>{{people.lien}}</p>
-
+    <p><span class="Intitule">Description : </span>{{ userslec.description }}</p>
+    <p><span class="Intitule">Lieu : </span>{{ userslec.location }}</p>
+    <p><span class="Intitule">Lien : </span>{{ userslec.url }}</p>
   </div>
 </div>

@@ -51,7 +51,9 @@
 	}
 
 	.content {
+		overflow: hidden;
 		font-size: 25px;
 		margin-left: 60px;
+		cursor: pointer;
 	}
 }
